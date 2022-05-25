@@ -6,8 +6,17 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		38F8AA35283E8CA6005FA0ED /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F8AA34283E8CA6005FA0ED /* AddAccount.swift */; };
+		38F8AA37283E9005005FA0ED /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F8AA36283E9005005FA0ED /* AccountModel.swift */; };
+		38F8AA39283E903B005FA0ED /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38F8AA38283E903B005FA0ED /* info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		38F8AA2D283E8C12005FA0ED /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F8AA34283E8CA6005FA0ED /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
+		38F8AA36283E9005005FA0ED /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		38F8AA38283E903B005FA0ED /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +49,9 @@
 		38F8AA2E283E8C12005FA0ED /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				38F8AA34283E8CA6005FA0ED /* AddAccount.swift */,
+				38F8AA36283E9005005FA0ED /* AccountModel.swift */,
+				38F8AA38283E903B005FA0ED /* info.plist */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -86,6 +98,7 @@
 				TargetAttributes = {
 					38F8AA2C283E8C12005FA0ED = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -112,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F8AA39283E903B005FA0ED /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F8AA35283E8CA6005FA0ED /* AddAccount.swift in Sources */,
+				38F8AA37283E9005005FA0ED /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +267,7 @@
 		38F8AA32283E8C12005FA0ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -273,6 +290,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -280,6 +298,7 @@
 		38F8AA33283E8C12005FA0ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
