@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		380FED9328405460001DB767 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FED9228405460001DB767 /* model.swift */; };
+		380FED9528405CE7001DB767 /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FED9428405CE7001DB767 /* RemoteAddAccount.swift */; };
+		380FED9728405D53001DB767 /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FED9628405D53001DB767 /* HttpPostClient.swift */; };
 		38F8AA35283E8CA6005FA0ED /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F8AA34283E8CA6005FA0ED /* AddAccount.swift */; };
 		38F8AA37283E9005005FA0ED /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F8AA36283E9005005FA0ED /* AccountModel.swift */; };
 		38F8AA39283E903B005FA0ED /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38F8AA38283E903B005FA0ED /* info.plist */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		380FED9228405460001DB767 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		380FED9428405CE7001DB767 /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
+		380FED9628405D53001DB767 /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		38F8AA2D283E8C12005FA0ED /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F8AA34283E8CA6005FA0ED /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
 		38F8AA36283E9005005FA0ED /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 		38F8AA40283E90D4005FA0ED /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				380FED9428405CE7001DB767 /* RemoteAddAccount.swift */,
+				380FED9628405D53001DB767 /* HttpPostClient.swift */,
 				38F8AA54283E9108005FA0ED /* info.plist */,
 			);
 			path = Data;
@@ -235,6 +241,7 @@
 					};
 					38F8AA3E283E90D4005FA0ED = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
 					};
 					38F8AA45283E90D4005FA0ED = {
 						CreatedOnToolsVersion = 13.4;
@@ -302,6 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380FED9728405D53001DB767 /* HttpPostClient.swift in Sources */,
+				380FED9528405CE7001DB767 /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +522,7 @@
 		38F8AA4F283E90D4005FA0ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -535,6 +545,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -542,6 +553,7 @@
 		38F8AA50283E90D4005FA0ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -571,6 +583,7 @@
 		38F8AA52283E90D4005FA0ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -587,6 +600,7 @@
 		38F8AA53283E90D4005FA0ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
